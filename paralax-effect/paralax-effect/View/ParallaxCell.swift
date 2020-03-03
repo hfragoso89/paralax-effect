@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ParalaxCell: UITableViewCell {
+class ParallaxCell: UITableViewCell {
     
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
