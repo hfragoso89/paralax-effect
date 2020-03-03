@@ -31,7 +31,7 @@ class ListTableViewController: UITableViewController {
         // paralaxCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier:"paralaxCell", for: indexPath) as? ParallaxCell
             else { return UITableViewCell() }
-        cell.configureCell(with: imageArray[indexPath.row]!, and: nameArray[indexPath.row])
+        cell.configureCell(with: itemsArray[indexPath.row].image, and: itemsArray[indexPath.row].description)
         cell.setupParallax()
         return cell
     }
