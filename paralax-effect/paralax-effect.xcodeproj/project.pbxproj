@@ -13,6 +13,7 @@
 		6BD93F9C240E160B00576C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD93F9A240E160B00576C0D /* Main.storyboard */; };
 		6BD93F9E240E160C00576C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD93F9D240E160C00576C0D /* Assets.xcassets */; };
 		6BD93FA1240E160C00576C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD93F9F240E160C00576C0D /* LaunchScreen.storyboard */; };
+		6BD93FAC240E198B00576C0D /* ParalaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD93FAB240E198B00576C0D /* ParalaxCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6BD93F9D240E160C00576C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BD93FA0240E160C00576C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BD93FA2240E160C00576C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD93FAB240E198B00576C0D /* ParalaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParalaxCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		6BD93F93240E160B00576C0D /* paralax-effect */ = {
 			isa = PBXGroup;
 			children = (
+				6BD93FAA240E196F00576C0D /* Model */,
+				6BD93FA9240E196800576C0D /* View */,
+				6BD93FA8240E195B00576C0D /* Controller */,
 				6BD93F94240E160B00576C0D /* AppDelegate.swift */,
 				6BD93F96240E160B00576C0D /* SceneDelegate.swift */,
-				6BD93F98240E160B00576C0D /* ListTableViewController.swift */,
 				6BD93F9A240E160B00576C0D /* Main.storyboard */,
 				6BD93F9D240E160C00576C0D /* Assets.xcassets */,
 				6BD93F9F240E160C00576C0D /* LaunchScreen.storyboard */,
 				6BD93FA2240E160C00576C0D /* Info.plist */,
 			);
 			path = "paralax-effect";
+			sourceTree = "<group>";
+		};
+		6BD93FA8240E195B00576C0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6BD93F98240E160B00576C0D /* ListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6BD93FA9240E196800576C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BD93FAB240E198B00576C0D /* ParalaxCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BD93FAA240E196F00576C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BD93F99240E160B00576C0D /* ListTableViewController.swift in Sources */,
+				6BD93FAC240E198B00576C0D /* ParalaxCell.swift in Sources */,
 				6BD93F95240E160B00576C0D /* AppDelegate.swift in Sources */,
 				6BD93F97240E160B00576C0D /* SceneDelegate.swift in Sources */,
 			);

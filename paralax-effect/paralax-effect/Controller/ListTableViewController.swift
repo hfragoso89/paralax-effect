@@ -21,13 +21,15 @@ class ListTableViewController: UITableViewController {
         return 1
     }
     
-    overrride func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
         //Return number of cells in the only section of the tableview
         return 5
     }
     
-    override func tableView(_ tableView:UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell {
+    override func tableView(_ tableView:UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // return a configured cell w/image and name
+        // paralaxCell
+        if let cell = tableView.dequeueReusableCell
     }
 }
 

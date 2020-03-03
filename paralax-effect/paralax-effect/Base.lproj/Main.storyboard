@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="Qyn-LT-Div">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="paralaxCell" rowHeight="120" id="Qyn-LT-Div" customClass="ParalaxCell" customModule="paralax_effect" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qyn-LT-Div" id="yxf-hL-UBc">
@@ -44,6 +44,10 @@
                                         <constraint firstAttribute="bottom" secondItem="pil-om-bQ4" secondAttribute="bottom" id="seJ-dT-IOD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="FT1-nG-CUp" id="aav-14-kTt"/>
+                                    <outlet property="itemImageView" destination="pil-om-bQ4" id="ARN-yw-r61"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
